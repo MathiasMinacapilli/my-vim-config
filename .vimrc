@@ -18,16 +18,16 @@ set undodir=~/.vim/undodir
 set undofile
 set incsearch
 
-set colorcolumn=80
+set colorcolumn=100
 highlight ColorColumn ctermbg=0 guibg=lightgrey
 
 colorscheme industry
 set background=dark
 
-source ~/.vim_runtime/vimrcs/basic.vim
-source ~/.vim_runtime/vimrcs/filetypes.vim
-source ~/.vim_runtime/vimrcs/plugins_config.vim
-source ~/.vim_runtime/vimrcs/extended.vim
+" source ~/.vim_runtime/vimrcs/basic.vim
+" source ~/.vim_runtime/vimrcs/filetypes.vim
+" source ~/.vim_runtime/vimrcs/plugins_config.vim
+" source ~/.vim_runtime/vimrcs/extended.vim
 
 try
 source ~/.vim_runtime/my_configs.vim
