@@ -101,3 +101,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 source ~/.zsh-nvm/zsh-nvm.plugin.zsh
+
+# nordic-doctor
+export NORDIC_DOCTOR_DIR="$HOME/.nordic-doctor"
+export PATH="$NORDIC_DOCTOR_DIR/bin:$PATH"

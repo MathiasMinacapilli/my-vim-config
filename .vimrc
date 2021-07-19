@@ -21,7 +21,7 @@ set incsearch
 set colorcolumn=100
 highlight ColorColumn ctermbg=0 guibg=lightgrey
 
-colorscheme industry
+colorscheme peachpuff
 set background=dark
 
 " source ~/.vim_runtime/vimrcs/basic.vim
