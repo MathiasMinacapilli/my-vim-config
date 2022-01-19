@@ -1,3 +1,4 @@
+
 syntax on
 
 set noerrorbells
@@ -41,7 +42,44 @@ if empty(glob(data_dir . '/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
+" Mappings
+let mapleader = " "
+
+nnoremap <Leader>w :w<CR>
+nnoremap <Leader>q :q<CR>
+
+map <Leader>nt :NERDTreeFind<CR>
+map <Leader>p :Files<CR>
+map <Leader>ag :Ag<CR>
+
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
+
+" Pluggins:
+" To install plugins you just run: `:PlugInstall`
+" To install plugins you just run: `:PlugInstall`
+" To clean plugins to re-install then: `:PlugClean`
 call plug#begin('~/.vim/plugged')
+
+" syntax
+Plug 'sheerun/vim-polyglot'
+
+" status bar
+" Plug 'maximbaz/light-ale'
+" Plug 'itchyny/lightline.vim'
+
+" tree
+Plug 'preservim/nerdtree'
+
+" typing
+Plug 'jiangmiao/auto-pairs'
+Plug 'alvan/vim-closetag'
+
+" autocomplete
+"Plug 'SirVer/ultisnips'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
@@ -51,4 +89,5 @@ Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 Plug 'vim-airline/vim-airline'
 
 call plug#end()
+
 
